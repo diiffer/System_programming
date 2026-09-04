@@ -1,0 +1,43 @@
+Reading symbols from a.out...
+(No debugging symbols found in a.out)
+(gdb) disassemble _start
+Dump of assembler code for function _start:
+   0x08049028 <+0>:     mov    $0x4,%eax
+   0x0804902d <+5>:     mov    $0x1,%ebx
+   0x08049032 <+10>:    mov    $0x8049000,%ecx
+   0x08049037 <+15>:    mov    $0xc,%edx
+   0x0804903c <+20>:    int    $0x80
+   0x0804903e <+22>:    mov    $0x4,%eax
+   0x08049043 <+27>:    mov    $0x1,%ebx
+   0x08049048 <+32>:    mov    $0x804900d,%ecx
+   0x0804904d <+37>:    mov    $0x9,%edx
+   0x08049052 <+42>:    int    $0x80
+   0x08049054 <+44>:    mov    $0x4,%eax
+   0x08049059 <+49>:    mov    $0x1,%ebx
+   0x0804905e <+54>:    mov    $0x8049017,%ecx
+   0x08049063 <+59>:    mov    $0x10,%edx
+   0x08049068 <+64>:    int    $0x80
+   0x0804906a <+66>:    mov    $0x1,%eax
+   0x0804906f <+71>:    mov    $0x0,%ebx
+   0x08049074 <+76>:    int    $0x80
+End of assembler dump.
+
+
+(gdb) disassemble main 
+Dump of assembler code for function main:
+   0x0000000000001149 <+0>:     endbr64
+   0x000000000000114d <+4>:     push   %rbp
+   0x000000000000114e <+5>:     mov    %rsp,%rbp
+   0x0000000000001151 <+8>:     lea    0xeac(%rip),%rax        # 0x2004
+   0x0000000000001158 <+15>:    mov    %rax,%rdi
+   0x000000000000115b <+18>:    call   0x1050 <puts@plt>
+   0x0000000000001160 <+23>:    lea    0xea9(%rip),%rax        # 0x2010
+   0x0000000000001167 <+30>:    mov    %rax,%rdi
+   0x000000000000116a <+33>:    call   0x1050 <puts@plt>
+   0x000000000000116f <+38>:    lea    0xea3(%rip),%rax        # 0x2019
+   0x0000000000001176 <+45>:    mov    %rax,%rdi
+   0x0000000000001179 <+48>:    call   0x1050 <puts@plt>
+   0x000000000000117e <+53>:    mov    $0x0,%eax
+   0x0000000000001183 <+58>:    pop    %rbp
+   0x0000000000001184 <+59>:    ret
+End of assembler dump.
