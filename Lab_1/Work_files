@@ -28,3 +28,6 @@
     cd ..
     cat 'ФИО'/T* > 'Лабораторная работа №1!/Result_3'
 12. uname -a >> 'Лабораторная работа №1!/Result_3'
+13. cd ..
+    mkdir Lab_1
+    mv 'sandbox' 'Work' 'Work_files' 'Lab_1'
