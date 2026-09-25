@@ -2,7 +2,7 @@ format ELF
 public _start
 
 section '.data' writeable
-    num_str db "98765", 0   ; Заданное число
+    num_str db "4693338485", 0   ; Заданное число
     res_str db 16 dup 0     ; Буфер для результата
     newline db 0xA
 

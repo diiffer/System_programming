@@ -2,9 +2,9 @@ format ELF
 public _start
 
 section '.data' writeable
-    ROWS = 4
-    COLS = 6
-    CHAR = '2'
+    ROWS = 8
+    COLS = 17
+    CHAR = '&'
     buffer db ROWS * COLS dup 0 ; Буфер для заполнения
     newline db 0xA
     char_buf db 0
